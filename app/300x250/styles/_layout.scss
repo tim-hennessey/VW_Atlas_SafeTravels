@@ -1,0 +1,136 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+#banner {
+    background: #111;
+    position: absolute;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    left: 50%;
+    top: 50%;
+    margin-left: -$banner-width / 2;
+    margin-top: -$banner-height / 2;
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    #button-legal {
+        background-color: rgba(255, 0, 255, 0);
+        cursor: pointer;
+        height: 25px;
+        width: 60px;
+        top: 208px;
+        left: 5px;
+        position: absolute;
+    }
+
+    #border {
+        border: 3px solid #fff;
+        display: block;
+        width: $banner-width - 6;
+        height: $banner-height - 6;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #border2 {
+        border: 1px solid #000000;
+        display: block;
+        width: $banner-width - 2;
+        height: $banner-height - 2;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #curtain {
+        top: 0;
+        left: 0;
+        width: $banner-width;
+        height: $banner-height;
+        background-color: rgba(0, 0, 0, 1);
+        position: absolute;
+    }
+
+    #legal {
+        top: 0px;
+        left: 0px;
+        width: $banner-width;
+        height: $banner-height;
+        background-color: rgba(0, 0, 0, .8);
+        opacity: 0;
+        position: absolute;
+
+        #legal_txt {
+            top: 10px;
+            left: 8px;
+            position: absolute;
+        }
+    }
+
+    #cta {
+        cursor: pointer;
+        background: #00b1eb;
+        border-radius: 3px;
+        width:53px;
+        height:17px;
+        left: 18px;
+        top: 70px;
+        opacity: 0;
+        position: absolute;
+
+        #cta_txt {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+    }
+
+    #footer {
+        background: #FFFFFF;
+        left: 0;
+        top: 190px;
+        width: $banner-width;
+        height: 60px;
+        position: absolute;
+
+        #legal_btn_txt {
+            left: 15px;
+            top: 19px;
+            //opacity: 0;
+            position: absolute;
+        }
+
+        #divider {
+            left: 70px;
+            top: 12px;
+            width: 1px;
+            height: 38px;
+            background: #d8dbe0;
+            //opacity: 0;
+            position: absolute;
+        }
+
+        #logo {
+            right: 10px;
+            bottom: 7px;
+            position: absolute;
+        }
+    }
+}
